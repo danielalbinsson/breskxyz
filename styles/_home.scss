@@ -181,9 +181,10 @@
       overflow: hidden;
       position: relative;
       width: 100%;
-      height: 100vh;
+      height: 100%;
+      margin-bottom: 60px;
       display: flex;
-      border-radius: 20px;
+      border-radius: 0px;
       justify-content: center;
       align-items: center;
       @media (max-width: 967px) {
@@ -191,14 +192,14 @@
       }
       .project-info {
         font-family: $font;
-        width: 300px;
+        width: 400px;
         text-align: left;
         color: $white;
-        margin: 0 32px;
+        margin: 32px;
         @media (max-width: 967px) {
-          width: 275px;
+          width: 400px;
         }
-        .tools-list {
+        .attrib-list {
           margin-top: 8px;
           font-family: $font;
           li {
@@ -277,11 +278,11 @@
             justify-content: center;
             align-items: center;
             text-decoration: none;
-            padding: 0;
+            padding: 16;
             cursor: pointer;
-            width: 100%;
+            width: 80%;
             height: 50px;
-            border-radius: 15px;
+            border-radius: 8px;
             border: none;
             outline: none;
             color: $black;
@@ -290,7 +291,7 @@
             font-family: $font;
             font-size: 1rem;
             @media (max-width: 967px) {
-              width: 100px;
+              width: 80%;
               font-size: 0.875rem;
             }
           }
@@ -299,12 +300,12 @@
       .project-image {
         display: block;
         cursor: pointer;
-        width: 800px;
-        height: 450px;
+        width: 540px;
+        height: 540px;
         object-fit: cover;
         object-position: center;
-        border-radius: 20px;
-        margin: 0 32px;
+        border-radius: 0px;
+        margin: 140px;
         transition: box-shadow 0.3s ease;
         box-shadow: 0 2.8px 2.2px rgba(211, 211, 211, 0.02),
           0 6.7px 5.3px rgba(211, 211, 211, 0.028),
@@ -320,19 +321,19 @@
             0 41.8px 33.4px rgba(256, 256, 256, 0.05),
             0 100px 80px rgba(256, 256, 256, 0.07);
         }
-        @media (max-width: 1280px) {
-          width: 500px;
-          height: 280px;
-        }
-        @media (max-width: 967px) {
-          width: 400px;
-          height: 220px;
-          margin: 0 0 1rem 0;
-        }
-        @media (max-width: 700px) {
-          width: 280px;
-          height: 160px;
-        }
+        // @media (max-width: 1280px) {
+        //   width: 500px;
+        //   height: 280px;
+        // }
+        // @media (max-width: 967px) {
+        //   width: 400px;
+        //   height: 220px;
+        //   margin: 0 0 1rem 0;
+        // }
+        // @media (max-width: 700px) {
+        //   width: 280px;
+        //   height: 160px;
+        // }
       }
     }
     progress[value] {

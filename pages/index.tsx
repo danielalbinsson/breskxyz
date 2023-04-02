@@ -62,31 +62,30 @@ const Homepage: NextPage<HomepageProps> = ({ project }) => {
       className="container"
     >
       <SEO
-        title="Alexander Grattan | Pittsburgh Software Developer"
-        url="https://agrattan.com/"
+        title="Bresk | digital art"
+        url="https://bresk.xyz/"
       />
       {animationComplete === false && <IntroOverlay />}
       <div className="after-animation">
-        <Header logoLink="/" />
         <main className="main-home">
           <div className="cta">
             <h1 className="title">
-              I create<span className="playful"> playful </span> experiences.
+              Bresk creates<span className="playful"> generative </span> art.
             </h1>
             <img
-              src="/images/My_Peep.png"
-              alt="My Peep"
+              src="/images/bresklisa.png"
+              alt="Bresk"
               className="peep-image"
             />
           </div>
 
           <p className="job-title">
             <span className="text-reveal">
-              Alexander Grattan / Software Developer
+              @TheBresk
             </span>
           </p>
           <button className="scroll-indicator" onClick={executeScroll}>
-            <span>Some Projects</span>
+            <span>Collections</span>
             <FontAwesomeIcon icon={faChevronDown} />
           </button>
         </main>
@@ -102,14 +101,14 @@ const Homepage: NextPage<HomepageProps> = ({ project }) => {
                 link,
                 slug,
                 code,
-                tools,
+                attributes,
               },
               i
             ) => (
               <div className="project" key={i} id={slug}>
                 <Link href={slug}>
                   <picture>
-                    <source srcSet={image} media="(min-width: 1280px)" />
+                    <source srcSet={image}  />
                     <img
                       className="project-image"
                       src={mobileImage}
@@ -134,9 +133,9 @@ const Homepage: NextPage<HomepageProps> = ({ project }) => {
                       </button>
                     </Link>
                   )}
-                  <h3>Tools used:</h3>
-                  <ul className="tools-list">
-                    {tools.map((item, index) => (
+                  <h3>Attributes:</h3>
+                  <ul className="attributes-list">
+                    {attributes.map((item, index) => (
                       <li key={index}>{item}</li>
                     ))}
                   </ul>
@@ -151,7 +150,7 @@ const Homepage: NextPage<HomepageProps> = ({ project }) => {
                         title={`Open site of ${name}`}
                         className="project-btn"
                       >
-                        Open Site
+                        Secondary Market
                       </motion.a>
                     )}
                     {code && (
@@ -161,10 +160,10 @@ const Homepage: NextPage<HomepageProps> = ({ project }) => {
                         rel="noopener noreferrer"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        title={`View Code for ${name}`}
+                        title={`View rarity for ${name}`}
                         className="project-btn"
                       >
-                        View Code
+                        Rarity rankings
                       </motion.a>
                     )}
                   </motion.div>
@@ -174,54 +173,43 @@ const Homepage: NextPage<HomepageProps> = ({ project }) => {
           )}
         </div>
         <footer>
-          <h2>Connect with Me</h2>
+          <h2>Bresk around the web</h2>
           <ul className="footer-links">
             <li>
               <motion.a
-                href="https://drive.google.com/file/d/1PgvpHThs5XjTwGZgib9ZTVLa8QbhulWp/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                title="Download Alexander's Resume"
-              >
-                Resume
-              </motion.a>
-            </li>
-            <li>
-              <motion.a
-                href="https://github.com/agrattan0820"
+              
+                href="https://opensea.io/TheBresk"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                title="Go to Alexander's GitHub"
+                title="Bresk on OpenSea"
               >
-                <FontAwesomeIcon icon={faGithub} size="2x" />
-                <span className="footer-hidden-text">GitHub</span>
+                <img src="https://storage.googleapis.com/opensea-static/Logomark/Logomark-Transparent%20White.png" alt="OpenSea" width={40} />
+                <span className="footer-hidden-text">OpenSea</span>
               </motion.a>
             </li>
             <li>
               <motion.a
-                href="https://www.linkedin.com/in/alexander-grattan/"
+                href="https://mintsquare.io/zksync/Bresk"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                title="Connect with Alexander on LinkedIn"
+                title="Bresk on Mintsquare"
               >
-                <FontAwesomeIcon icon={faLinkedin} size="2x" />
-                <span className="footer-hidden-text">GitHub</span>
+                <img src="https://mintsquare.sfo3.cdn.digitaloceanspaces.com/mintsquare/collections/mintsquarelogo.jpg" alt="Mintsquare" width={40} />
+                <span className="footer-hidden-text">Mintsquare</span>
               </motion.a>
             </li>
             <li>
               <motion.a
-                href="https://twitter.com/agrattan0820"
+                href="https://twitter.com/TheBresk"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                title="Follow Alexander on Twitter"
+                title="Follow Bresk on Twitter"
               >
                 <FontAwesomeIcon icon={faTwitter} size="2x" />
                 <span className="footer-hidden-text">Twitter</span>

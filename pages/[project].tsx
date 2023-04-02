@@ -43,7 +43,6 @@ const Project: NextPage<ProjectPageProps> = ({ projectData }) => {
         url={`https://agrattan.com/${projectData.slug}`}
         description={projectData.description}
       />
-      <Header logoLink={`/?project=${projectData.slug}`} />
       <motion.main
         initial="hidden"
         animate={controls}
