@@ -14,10 +14,10 @@
     "@fortawesome/react-fontawesome": "^0.1.12",
     "framer-motion": "^2.9.4",
     "gsap": "^3.5.1",
-    "next": "^10.0.1",
+    "next": "^14.0.0",
     "next-transpile-modules": "^4.1.0",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-ga": "^3.2.1",
     "react-hotjar": "^2.2.1",
     "sass": "^1.29.0"
